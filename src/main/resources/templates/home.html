@@ -51,21 +51,9 @@
 
     <div class="container">
         <div class="row">
-            <div class="col s12 l4">
+            <div class="col s12 l4" th:each="pic : ${all_pictures}">
                 <a>
-                    <img th:src="@{/imgs/snezhinkikristallysnegzima.jpg}"/>
-                    <a href="#" class="unmark favorite"></a>
-                </a>
-            </div>
-            <div class="col s12 l4">
-                <a>
-                    <img th:src="@{/imgs/germaniyabavariyalakeobersee.jpg}"/>
-                    <a href="#" class="unmark favorite"></a>
-                </a>
-            </div>
-            <div class="col s12 l4">
-                <a>
-                    <img th:src="@{/imgs/masseffecandrome.jpg}"/>
+                    <img th:src="@{'/imgs/'+${pic.name} +'.jpg'}"/>
                     <a href="#" class="unmark favorite"></a>
                 </a>
             </div>

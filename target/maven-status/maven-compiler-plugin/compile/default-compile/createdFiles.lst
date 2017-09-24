@@ -1,4 +1,8 @@
-com\diit\piclib\controllers\FavouritesController.class
-com\diit\piclib\controllers\CategoryController.class
+com\diit\piclib\controller\CategoryController.class
+com\diit\piclib\controller\PicController.class
 com\diit\piclib\App.class
-com\diit\piclib\controllers\PicController.class
+com\diit\piclib\data\CategoryRepository.class
+com\diit\piclib\data\PicRepository.class
+com\diit\piclib\model\Category.class
+com\diit\piclib\model\Picture.class
+com\diit\piclib\controller\FavouritesController.class

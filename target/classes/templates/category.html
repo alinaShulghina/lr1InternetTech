@@ -51,12 +51,12 @@
 
     <div class="pictures container">
 
-        <div class="chip">category name</div>
+        <div class="chip" th:text="${category.name}">category name</div>
         <div class="row">
 
-            <div class="col s12 l4">
+            <div class="col s12 l4" th:each="picture:${pictures}">
                 <a>
-                    <img src="http://placehold.it/200x200" />
+                    <img th:src="'/imgs/'+${picture.name}+'.jpg'" />
                     <a href="#" class="mark favorite"></a>
                 </a>
             </div>
